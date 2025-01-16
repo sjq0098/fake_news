@@ -10,8 +10,10 @@ FakeNewsDetection/
 │   │   ├── ml_models.py  # 存放传统机器学习模型（LogisticRegression, RandomForest等）    
 │   │   └── dl_models.py  # 存放深度学习模型（CNN, RNN, Transformer等）    
 │   │
-│   ├── utils/    
+│   ├── data_factory/    
 │   │   └── data_preprocessing.py # 数据预处理函数（读文件、清洗、分词等）  
+|   |── utils/     
+│   │   └── visualization.py #可视化   
 │   │
 │   ├── train.py            # 训练脚本，可通过参数选择使用哪种模型     
 │   └── evaluate.py        # 评估脚本（可选，也可合并在train.py里）  
