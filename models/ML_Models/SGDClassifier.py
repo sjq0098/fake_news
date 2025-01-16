@@ -11,7 +11,7 @@ sys.path.append(root_dir)
 from data_factory.data_processing import load_data_txt, jieba_cut_text, veclization
 import pandas as pd
 from sklearn.model_selection import train_test_split, learning_curve
-from sklearn.linear_model import LogisticRegression
+from sklearn.linear_model import SGDClassifier
 from sklearn.metrics import accuracy_score, classification_report
 import numpy as np
 import matplotlib.pyplot as plt
@@ -38,7 +38,11 @@ X_train,X_label,tfidf_vec=veclization(train_df,text_col="cut_text",
 # 划分训练集和验证集
 X_tr, X_val, y_tr, y_val = train_test_split(X_train, X_label, test_size=0.2, random_state=42)
 # 建立模型并训练
-model = LogisticRegression(max_iter=1000)
+
+#在这里我第一次使用了GridSearchCV参数调优
+from sklearn.model_selection import GridSearchCV
+
+model = SGDClassifier(loss='hinge',penalty='l2',alpha=1e-4,learning_rate='optimal',eta0=0.01)
 model.fit(X_tr, y_tr)
 
 # 在验证集上预测
@@ -48,7 +52,7 @@ print("验证集准确率:", accuracy_score(y_val, y_val_pred))
 
 
 result_dir = os.path.join(root_dir, "result")
-model_name = "LogisticRegression"  # 可根据实际情况修改
+model_name = " SGDClassifier"  # 可根据实际情况修改
 # 生成分类报告
 classes = [str(label) for label in sorted(np.unique(X_label))]
 report = classification_report(y_val, y_val_pred, target_names=classes)
@@ -62,28 +66,10 @@ with open(report_save_path, 'w', encoding='utf-8') as f:
 
 print(f"分类报告已保存到: {report_save_path}")
 classes = sorted(np.unique(X_label))
-# 混淆矩阵
-cm_save_path = os.path.join(result_dir, f"{model_name}_confusion_matrix.png")
-plot_confusion_matrix(y_val, y_val_pred, classes=classes,
-                      title="Confusion Matrix", save_path=cm_save_path)
-
-# 多类别 ROC 曲线（OvR）
-roc_save_path = os.path.join(result_dir, f"{model_name}_multiclass_roc_curve.png")
-plot_multiclass_roc(model, X_val, y_val, classes=classes,
-                    title="Multi-class ROC Curve", save_path=roc_save_path)
-
-# 多类别 Precision-Recall 曲线（OvR）
-pr_save_path = os.path.join(result_dir, f"{model_name}_multiclass_pr_curve.png")
-plot_multiclass_precision_recall(model, X_val, y_val, classes=classes,
-                                 title="Multi-class Precision-Recall Curve", save_path=pr_save_path)
-
-print("所有图形已保存到:", result_dir)
-
 
 # -------------------------------
 # 对没有标签的测试集进行预测并保存结果
 # -------------------------------
-
 # 使用训练时 fit 得到的 tfidf_vec 对测试数据进行向量化
 # 注意：测试集文本已经存放在 "cut_text" 列中
 X_test = tfidf_vec.transform(test_df["cut_text"].tolist())
@@ -108,3 +94,31 @@ result_df.to_csv(test_result_path, index=False, encoding="utf-8")
 print("测试集预测结果已保存到:", test_result_path)
 
 
+# 学习曲线绘制
+learning_curve_save_path = os.path.join(result_dir, f"{model_name}_learning_curve.png")
+
+train_sizes, train_scores, val_scores = learning_curve(
+    model, X_tr, y_tr, train_sizes=np.linspace(0.1, 0.5, 5), cv=3, scoring='accuracy', n_jobs=1, random_state=42
+)
+
+train_mean = np.mean(train_scores, axis=1)
+val_mean = np.mean(val_scores, axis=1)
+train_std = np.std(train_scores, axis=1)
+val_std = np.std(val_scores, axis=1)
+
+# 绘制学习曲线
+plt.figure(figsize=(10, 6))
+plt.plot(train_sizes, train_mean, label='train_accuracy', color='blue', marker='o')
+plt.plot(train_sizes, val_mean, label='val_accuracy', color='green', marker='o')
+plt.fill_between(train_sizes, train_mean - train_std, train_mean + train_std, color='blue', alpha=0.2)
+plt.fill_between(train_sizes, val_mean - val_std, val_mean + val_std, color='green', alpha=0.2)
+
+plt.title('learning_curve - SGDClassifier')
+plt.xlabel('Number of Training Samples')
+plt.ylabel('accuracy')
+plt.legend(loc='best')
+plt.grid(True)
+
+# 保存学习曲线图像
+plt.savefig(learning_curve_save_path)
+print(f"学习曲线图像已保存到: {learning_curve_save_path}")
