@@ -11,7 +11,7 @@ sys.path.append(root_dir)
 from data_factory.data_processing import load_data_txt, jieba_cut_text, veclization
 import pandas as pd
 from sklearn.model_selection import train_test_split, learning_curve
-from sklearn.neighbors import KNeighborsClassifier
+from xgboost import XGBClassifier
 from sklearn.metrics import accuracy_score, classification_report
 import numpy as np
 import matplotlib.pyplot as plt
@@ -37,19 +37,9 @@ X_train,X_label,tfidf_vec=veclization(train_df,text_col="cut_text",
                                       ngram_range=(1, 1), stop_words=None)
 # 划分训练集和验证集
 X_tr, X_val, y_tr, y_val = train_test_split(X_train, X_label, test_size=0.2, random_state=42)
-# 建立模型并训练,进行简单的参数调整
-n_neighborss=[2,3,4,5,6,7]
-accuracies=[]
-for n_neighbors in n_neighborss:
-    curr_model=KNeighborsClassifier(n_neighbors=n_neighbors)
-    curr_model.fit(X_tr,y_tr)
-    y_val_pred=curr_model.predict(X_val)
-    accuracy=accuracy_score(y_val,y_val_pred)
-    accuracies.append((n_neighbors,accuracy))
-best_N, best_accuracy = max(accuracies, key=lambda x: x[1])
-print(f"最佳 Neighbor 值: {best_N}, 对应准确率: {best_accuracy}")
+# 建立模型并训练
 
-model = KNeighborsClassifier(n_neighbors=best_N)
+model = XGBClassifier(objective='multi:softmax', num_class=len(np.unique(y_tr)), eval_metric='mlogloss', n_estimators=100, learning_rate=0.1)
 model.fit(X_tr, y_tr)
 
 # 在验证集上预测
@@ -57,7 +47,7 @@ y_val_pred = model.predict(X_val)
 print("验证集准确率:", accuracy_score(y_val, y_val_pred))
 
 result_dir = os.path.join(root_dir, "result")
-model_name = "KNeighborsClassifier"  # 可根据实际情况修改
+model_name = "XGBClassifier"  # 可根据实际情况修改
 # 生成分类报告
 classes = [str(label) for label in sorted(np.unique(X_label))]
 report = classification_report(y_val, y_val_pred, target_names=classes)
@@ -133,3 +123,11 @@ plt.grid(True)
 # 保存学习曲线图像
 plt.savefig(learning_curve_save_path)
 print(f"学习曲线图像已保存到: {learning_curve_save_path}")
+
+# 获取特征重要性
+importance = model.feature_importances_
+
+# 绘制特征重要性
+plt.barh(range(len(importance)), importance)
+plt.yticks(range(len(importance)), tfidf_vec.get_feature_names_out())
+plt.show()
