@@ -124,10 +124,5 @@ plt.grid(True)
 plt.savefig(learning_curve_save_path)
 print(f"学习曲线图像已保存到: {learning_curve_save_path}")
 
-# 获取特征重要性
-importance = model.feature_importances_
 
-# 绘制特征重要性
-plt.barh(range(len(importance)), importance)
-plt.yticks(range(len(importance)), tfidf_vec.get_feature_names_out())
-plt.show()
+

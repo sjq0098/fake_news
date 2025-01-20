@@ -83,3 +83,12 @@ if __name__ == "__main__":
     check_gpu_with_pytorch()
 
     print("所有环境检查完成！如果没有抛出错误，就可以继续后续步骤。")
+
+    import torch
+
+if torch.cuda.is_available():
+    print(f"CUDA is available. Number of GPUs: {torch.cuda.device_count()}")
+    print(f"Current device: {torch.cuda.current_device()}")
+    print(f"Device name: {torch.cuda.get_device_name(torch.cuda.current_device())}")
+else:
+    print("CUDA is not available. Running on CPU.")
