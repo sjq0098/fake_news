@@ -46,7 +46,7 @@ word_to_idx = {PAD_TOKEN: 0, UNK_TOKEN: 1}
 for word, _ in vocab:
     word_to_idx[word] = len(word_to_idx)
 
-max_sequence_length = 500  # 根据文本长度分布调整
+max_sequence_length = 100  # 根据文本长度分布调整
 
 def text_to_indices(text):
     # 将分词后的文本转为索引列表
@@ -97,46 +97,48 @@ coverage = len([word for word in train_words if word in word_to_idx]) / len(trai
 print(f"词汇表覆盖率: {coverage:.2%}")
 
 # 创建DataLoader
-batch_size = 64
+batch_size = 32
 train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
 val_loader = DataLoader(val_dataset, batch_size=batch_size)
 test_loader = DataLoader(test_dataset, batch_size=batch_size)
 
 import torch.nn as nn
 
-class LSTMClassifier(nn.Module):
-    def __init__(self, vocab_size, embed_dim, hidden_dim, output_dim, 
-                 num_layers=2, bidirectional=True, dropout=0.5):
+class CNNClassifier(nn.Module):
+    def __init__(self, vocab_size, embed_dim, num_filters, filter_sizes, output_dim, dropout=0.5):
         super().__init__()
         self.embedding = nn.Embedding(vocab_size, embed_dim, padding_idx=0)
-        self.lstm = nn.LSTM(
-            embed_dim, hidden_dim,
-            num_layers=num_layers,
-            bidirectional=bidirectional,
-            batch_first=True,
-            dropout=dropout if num_layers > 1 else 0
-        )
-        self.dropout = nn.Dropout(dropout)
-        directions = 2 if bidirectional else 1
-        self.fc = nn.Linear(hidden_dim * directions, output_dim)
+        self.convs=nn.ModuleList([nn.Conv1d(in_channels=embed_dim, 
+                     out_channels=num_filters, 
+                     kernel_size=fs)
+            for fs in filter_sizes
+        ])
+        self.dropout=nn.Dropout(dropout)
+        self.fc=nn.Linear(num_filters * len(filter_sizes), output_dim)
 
-    def forward(self, x):
-        embedded = self.embedding(x)  # (batch, seq, emb)
-        output, (hidden, cell) = self.lstm(embedded)
+    def forward(self,x):
+        # x shape: (batch_size, seq_len)
+        embedded = self.embedding(x)  # (batch_size, seq_len, embed_dim)
+        embedded = embedded.permute(0, 2, 1)  # 调整为Conv1d需要的形状 (batch_size, embed_dim, seq_len)
         
-        # 拼接双向最后隐藏状态
-        if self.lstm.bidirectional:
-            hidden = torch.cat((hidden[-2], hidden[-1]), dim=1)
-        else:
-            hidden = hidden[-1]
+        # 通过每个卷积层并进行最大池化
+        conved = [conv(embedded) for conv in self.convs]  # 每个卷积后的形状 (batch_size, num_filters, seq_len - kernel_size + 1)
+        pooled = [torch.max(conv, dim=2)[0] for conv in conved]  # 全局最大池化 (batch_size, num_filters)
         
-        hidden = self.dropout(hidden)
-        return self.fc(hidden)
+        # 拼接所有特征
+        cat = torch.cat(pooled, dim=1)  # (batch_size, num_filters * len(filter_sizes))
+        cat = self.dropout(cat)
+        return self.fc(cat)
 
 # 初始化改进后的模型
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-model = LSTMClassifier(vocab_size=len(word_to_idx),embed_dim=256,hidden_dim=128,output_dim=len(train_df['label'].unique()) ,bidirectional=True,
-    dropout=0.3
+model = CNNClassifier(
+    vocab_size=len(word_to_idx),
+    embed_dim=512,          # 保持与LSTM相同的嵌入维度
+    num_filters=100,        # 每个卷积层的通道数
+    filter_sizes=[2, 3, 4], # 不同卷积核尺寸
+    output_dim=len(train_df['label'].unique()),
+    dropout=0.5
 ).to(device)
 
 criterion = nn.CrossEntropyLoss()
@@ -180,7 +182,7 @@ print(f"验证集准确率: {accuracy:.4f}")
 
 # Save classification report
 result_dir = os.path.join(root_dir, "result")
-model_name = "LSTM"
+model_name = "CNN"
 classes = [str(label) for label in sorted(np.unique(val_labels))]
 report = classification_report(val_labels, val_preds, target_names=classes)
 
