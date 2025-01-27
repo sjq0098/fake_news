@@ -1,5 +1,6 @@
 import  pandas as pd
 import jieba
+import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 def load_data_txt(file_path):
     data_rows=[   ]
@@ -93,6 +94,28 @@ def veclization(df,
     X = tfidf_vec.fit_transform(texts)
     return X, labels, tfidf_vec
 
+def fasttext_vectorization(texts, model, vector_size=300):
+    """
+    将分词后的文本列表转换为 FastText 平均向量
+    :param texts: 分词后的文本列表（例如 ["我", "喜欢", "自然语言处理"]）
+    :param model: 加载的 FastText 模型
+    :param vector_size: 向量维度
+    :return: 向量矩阵 (n_samples, vector_size)
+    """
+    features = []
+    for text in texts:
+        vectors = []
+        for word in text:
+            if word in model:  # 忽略未登录词
+                vectors.append(model[word])
+        if len(vectors) > 0:
+            avg_vector = np.mean(vectors, axis=0)
+        else:
+            avg_vector = np.zeros(vector_size)  # 处理空文本
+        features.append(avg_vector)
+    unknown_words = [word for text in texts for word in text if word not in model]
+    print(f"未登录词比例: {len(unknown_words) / sum(len(text) for text in texts):.2%}")
+    return np.array(features)
 
 
 

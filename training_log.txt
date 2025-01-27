@@ -1,0 +1,646 @@
+日志如下PS D:\fake_news> & D:/withoutchinese_anaconda/envs/fake_news_detection/python.exe d:/fake_news/models/DL_Models/BERT2.py
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\torchvision\datapoints\__init__.py:12: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\torchvision\transforms\v2\__init__.py:54: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-chinese and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\transformers\optimization.py:591: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\torchvision\datapoints\__init__.py:12: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\torchvision\datapoints\__init__.py:12: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\torchvision\datapoints\__init__.py:12: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\torchvision\datapoints\__init__.py:12: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\torchvision\transforms\v2\__init__.py:54: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\torchvision\transforms\v2\__init__.py:54: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\torchvision\transforms\v2\__init__.py:54: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\torchvision\transforms\v2\__init__.py:54: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+Epoch 1 | Step 0/11481 | Loss: 1.4294
+Epoch 1 | Step 100/11481 | Loss: 1.4615
+Epoch 1 | Step 200/11481 | Loss: 1.4035
+Epoch 1 | Step 300/11481 | Loss: 1.3200
+Epoch 1 | Step 400/11481 | Loss: 1.1734
+Epoch 1 | Step 500/11481 | Loss: 1.1202
+Epoch 1 | Step 600/11481 | Loss: 1.1155
+Epoch 1 | Step 700/11481 | Loss: 1.0527
+Epoch 1 | Step 800/11481 | Loss: 0.9132
+Epoch 1 | Step 900/11481 | Loss: 0.6765
+Epoch 1 | Step 1000/11481 | Loss: 0.6536
+Epoch 1 | Step 1100/11481 | Loss: 0.5898
+Epoch 1 | Step 1200/11481 | Loss: 0.4406
+Epoch 1 | Step 1300/11481 | Loss: 0.4308
+Epoch 1 | Step 1400/11481 | Loss: 0.3972
+Epoch 1 | Step 1500/11481 | Loss: 0.4860
+Epoch 1 | Step 1600/11481 | Loss: 0.3234
+Epoch 1 | Step 1700/11481 | Loss: 0.2643
+Epoch 1 | Step 1800/11481 | Loss: 0.6453
+Epoch 1 | Step 1900/11481 | Loss: 0.5965
+Epoch 1 | Step 2000/11481 | Loss: 0.4021
+Epoch 1 | Step 2100/11481 | Loss: 0.3611
+Epoch 1 | Step 2200/11481 | Loss: 0.5013
+Epoch 1 | Step 2300/11481 | Loss: 0.2380
+Epoch 1 | Step 2400/11481 | Loss: 0.3521
+Epoch 1 | Step 2500/11481 | Loss: 0.4863
+Epoch 1 | Step 2600/11481 | Loss: 0.1703
+Epoch 1 | Step 2700/11481 | Loss: 0.1212
+Epoch 1 | Step 2800/11481 | Loss: 0.1712
+Epoch 1 | Step 2900/11481 | Loss: 0.3255
+Epoch 1 | Step 3000/11481 | Loss: 0.3135
+Epoch 1 | Step 3100/11481 | Loss: 0.5695
+Epoch 1 | Step 3200/11481 | Loss: 0.3014
+Epoch 1 | Step 3300/11481 | Loss: 0.3857
+Epoch 1 | Step 3400/11481 | Loss: 0.1060
+Epoch 1 | Step 3500/11481 | Loss: 0.2259
+Epoch 1 | Step 3600/11481 | Loss: 0.1926
+Epoch 1 | Step 3700/11481 | Loss: 0.4215
+Epoch 1 | Step 3800/11481 | Loss: 0.2135
+Epoch 1 | Step 3900/11481 | Loss: 0.2242
+Epoch 1 | Step 4000/11481 | Loss: 0.6231
+Epoch 1 | Step 4100/11481 | Loss: 0.2436
+Epoch 1 | Step 4200/11481 | Loss: 0.2894
+Epoch 1 | Step 4300/11481 | Loss: 0.2471
+Epoch 1 | Step 4400/11481 | Loss: 0.1303
+Epoch 1 | Step 4500/11481 | Loss: 0.2093
+Epoch 1 | Step 4600/11481 | Loss: 0.0686
+Epoch 1 | Step 4700/11481 | Loss: 0.2853
+Epoch 1 | Step 4800/11481 | Loss: 0.1606
+Epoch 1 | Step 4900/11481 | Loss: 0.1534
+Epoch 1 | Step 5000/11481 | Loss: 0.1788
+Epoch 1 | Step 5100/11481 | Loss: 0.4185
+Epoch 1 | Step 5200/11481 | Loss: 0.6084
+Epoch 1 | Step 5300/11481 | Loss: 0.0867
+Epoch 1 | Step 5400/11481 | Loss: 0.1853
+Epoch 1 | Step 5500/11481 | Loss: 0.0883
+Epoch 1 | Step 5600/11481 | Loss: 0.2010
+Epoch 1 | Step 5700/11481 | Loss: 0.2494
+Epoch 1 | Step 5800/11481 | Loss: 0.4623
+Epoch 1 | Step 5900/11481 | Loss: 0.4286
+Epoch 1 | Step 6000/11481 | Loss: 0.1403
+Epoch 1 | Step 6100/11481 | Loss: 0.1135
+Epoch 1 | Step 6200/11481 | Loss: 0.5736
+Epoch 1 | Step 6300/11481 | Loss: 0.1879
+Epoch 1 | Step 6400/11481 | Loss: 0.5466
+Epoch 1 | Step 6500/11481 | Loss: 0.3731
+Epoch 1 | Step 6600/11481 | Loss: 0.2545
+Epoch 1 | Step 6700/11481 | Loss: 0.2566
+Epoch 1 | Step 6800/11481 | Loss: 0.2935
+Epoch 1 | Step 6900/11481 | Loss: 0.4071
+Epoch 1 | Step 7000/11481 | Loss: 0.1909
+Epoch 1 | Step 7100/11481 | Loss: 0.3993
+Epoch 1 | Step 7200/11481 | Loss: 0.2921
+Epoch 1 | Step 7300/11481 | Loss: 0.2019
+Epoch 1 | Step 7400/11481 | Loss: 0.2028
+Epoch 1 | Step 7500/11481 | Loss: 0.3945
+Epoch 1 | Step 7600/11481 | Loss: 0.1324
+Epoch 1 | Step 7700/11481 | Loss: 0.2430
+Epoch 1 | Step 7800/11481 | Loss: 0.4072
+Epoch 1 | Step 7900/11481 | Loss: 0.1338
+Epoch 1 | Step 8000/11481 | Loss: 0.5262
+Epoch 1 | Step 8100/11481 | Loss: 0.0598
+Epoch 1 | Step 8200/11481 | Loss: 0.4472
+Epoch 1 | Step 8300/11481 | Loss: 0.4633
+Epoch 1 | Step 8400/11481 | Loss: 0.0676
+Epoch 1 | Step 8500/11481 | Loss: 0.1931
+Epoch 1 | Step 8600/11481 | Loss: 0.0473
+Epoch 1 | Step 8700/11481 | Loss: 0.2783
+Epoch 1 | Step 8800/11481 | Loss: 0.2493
+Epoch 1 | Step 8900/11481 | Loss: 0.2599
+Epoch 1 | Step 9000/11481 | Loss: 0.0777
+Epoch 1 | Step 9100/11481 | Loss: 0.3330
+Epoch 1 | Step 9200/11481 | Loss: 0.0467
+Epoch 1 | Step 9300/11481 | Loss: 0.2781
+Epoch 1 | Step 9400/11481 | Loss: 0.3267
+Epoch 1 | Step 9500/11481 | Loss: 0.2451
+Epoch 1 | Step 9600/11481 | Loss: 0.3329
+Epoch 1 | Step 9700/11481 | Loss: 0.0725
+Epoch 1 | Step 9800/11481 | Loss: 0.3017
+Epoch 1 | Step 9900/11481 | Loss: 0.3890
+Epoch 1 | Step 10000/11481 | Loss: 0.1670
+Epoch 1 | Step 10100/11481 | Loss: 0.1640
+Epoch 1 | Step 10200/11481 | Loss: 0.3554
+Epoch 1 | Step 10300/11481 | Loss: 0.4096
+Epoch 1 | Step 10400/11481 | Loss: 0.1849
+Epoch 1 | Step 10500/11481 | Loss: 0.0769
+Epoch 1 | Step 10600/11481 | Loss: 0.3963
+Epoch 1 | Step 10700/11481 | Loss: 0.1360
+Epoch 1 | Step 10800/11481 | Loss: 0.0999
+Epoch 1 | Step 10900/11481 | Loss: 0.2406
+Epoch 1 | Step 11000/11481 | Loss: 0.1443
+Epoch 1 | Step 11100/11481 | Loss: 0.0894
+Epoch 1 | Step 11200/11481 | Loss: 0.2641
+Epoch 1 | Step 11300/11481 | Loss: 0.0788
+Epoch 1 | Step 11400/11481 | Loss: 0.3098
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\torchvision\datapoints\__init__.py:12: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\torchvision\datapoints\__init__.py:12: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\torchvision\datapoints\__init__.py:12: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\torchvision\datapoints\__init__.py:12: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\torchvision\transforms\v2\__init__.py:54: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\torchvision\transforms\v2\__init__.py:54: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\torchvision\transforms\v2\__init__.py:54: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\torchvision\transforms\v2\__init__.py:54: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+Epoch 1/5 | Train Loss: 0.7136 | Val Acc: 0.8650
+Epoch 2 | Step 0/11481 | Loss: 0.2516
+Epoch 2 | Step 100/11481 | Loss: 0.1006
+Epoch 2 | Step 200/11481 | Loss: 0.1666
+Epoch 2 | Step 300/11481 | Loss: 0.2141
+Epoch 2 | Step 400/11481 | Loss: 0.2474
+Epoch 2 | Step 500/11481 | Loss: 0.4098
+Epoch 2 | Step 600/11481 | Loss: 0.1639
+Epoch 2 | Step 700/11481 | Loss: 0.3540
+Epoch 2 | Step 800/11481 | Loss: 0.2050
+Epoch 2 | Step 900/11481 | Loss: 0.0387
+Epoch 2 | Step 1000/11481 | Loss: 0.4777
+Epoch 2 | Step 1100/11481 | Loss: 0.2044
+Epoch 2 | Step 1200/11481 | Loss: 0.0245
+Epoch 2 | Step 1300/11481 | Loss: 0.1137
+Epoch 2 | Step 1400/11481 | Loss: 0.3673
+Epoch 2 | Step 1500/11481 | Loss: 0.0389
+Epoch 2 | Step 1600/11481 | Loss: 0.2963
+Epoch 2 | Step 1700/11481 | Loss: 0.4304
+Epoch 2 | Step 1800/11481 | Loss: 0.3257
+Epoch 2 | Step 1900/11481 | Loss: 0.1142
+Epoch 2 | Step 2000/11481 | Loss: 0.0968
+Epoch 2 | Step 2100/11481 | Loss: 0.4716
+Epoch 2 | Step 2200/11481 | Loss: 0.0757
+Epoch 2 | Step 2300/11481 | Loss: 0.2632
+Epoch 2 | Step 2400/11481 | Loss: 0.3774
+Epoch 2 | Step 2500/11481 | Loss: 0.1342
+Epoch 2 | Step 2600/11481 | Loss: 0.3287
+Epoch 2 | Step 2700/11481 | Loss: 0.2102
+Epoch 2 | Step 2800/11481 | Loss: 0.1193
+Epoch 2 | Step 2900/11481 | Loss: 0.1229
+Epoch 2 | Step 3000/11481 | Loss: 0.0573
+Epoch 2 | Step 3100/11481 | Loss: 0.0899
+Epoch 2 | Step 3200/11481 | Loss: 0.3498
+Epoch 2 | Step 3300/11481 | Loss: 0.1205
+Epoch 2 | Step 3400/11481 | Loss: 0.1579
+Epoch 2 | Step 3500/11481 | Loss: 0.0908
+Epoch 2 | Step 3600/11481 | Loss: 0.0661
+Epoch 2 | Step 3700/11481 | Loss: 0.0859
+Epoch 2 | Step 3800/11481 | Loss: 0.0400
+Epoch 2 | Step 3900/11481 | Loss: 0.2366
+Epoch 2 | Step 4000/11481 | Loss: 0.2934
+Epoch 2 | Step 4100/11481 | Loss: 0.1870
+Epoch 2 | Step 4200/11481 | Loss: 0.4726
+Epoch 2 | Step 4300/11481 | Loss: 0.0616
+Epoch 2 | Step 4400/11481 | Loss: 0.0643
+Epoch 2 | Step 4500/11481 | Loss: 0.2775
+Epoch 2 | Step 4600/11481 | Loss: 0.0814
+Epoch 2 | Step 4700/11481 | Loss: 0.2012
+Epoch 2 | Step 4800/11481 | Loss: 0.2369
+Epoch 2 | Step 4900/11481 | Loss: 0.5609
+Epoch 2 | Step 5000/11481 | Loss: 0.1090
+Epoch 2 | Step 5100/11481 | Loss: 0.2794
+Epoch 2 | Step 5200/11481 | Loss: 0.3200
+Epoch 2 | Step 5300/11481 | Loss: 0.0682
+Epoch 2 | Step 5400/11481 | Loss: 0.3937
+Epoch 2 | Step 5500/11481 | Loss: 0.1091
+Epoch 2 | Step 5600/11481 | Loss: 0.0275
+Epoch 2 | Step 5700/11481 | Loss: 0.0463
+Epoch 2 | Step 5800/11481 | Loss: 0.0420
+Epoch 2 | Step 5900/11481 | Loss: 0.1316
+Epoch 2 | Step 6000/11481 | Loss: 0.0736
+Epoch 2 | Step 6100/11481 | Loss: 0.1484
+Epoch 2 | Step 6200/11481 | Loss: 0.4591
+Epoch 2 | Step 6300/11481 | Loss: 0.2487
+Epoch 2 | Step 6400/11481 | Loss: 0.2931
+Epoch 2 | Step 6500/11481 | Loss: 0.1590
+Epoch 2 | Step 6600/11481 | Loss: 0.0865
+Epoch 2 | Step 6700/11481 | Loss: 0.1432
+Epoch 2 | Step 6800/11481 | Loss: 0.4097
+Epoch 2 | Step 6900/11481 | Loss: 0.1945
+Epoch 2 | Step 7000/11481 | Loss: 0.1086
+Epoch 2 | Step 7100/11481 | Loss: 0.2701
+Epoch 2 | Step 7200/11481 | Loss: 0.3578
+Epoch 2 | Step 7300/11481 | Loss: 0.2422
+Epoch 2 | Step 7400/11481 | Loss: 0.2886
+Epoch 2 | Step 7500/11481 | Loss: 0.2230
+Epoch 2 | Step 7600/11481 | Loss: 0.0540
+Epoch 2 | Step 7700/11481 | Loss: 0.0305
+Epoch 2 | Step 7800/11481 | Loss: 0.1529
+Epoch 2 | Step 7900/11481 | Loss: 0.1227
+Epoch 2 | Step 8000/11481 | Loss: 0.2235
+Epoch 2 | Step 8100/11481 | Loss: 0.1818
+Epoch 2 | Step 8200/11481 | Loss: 0.3797
+Epoch 2 | Step 8300/11481 | Loss: 0.0781
+Epoch 2 | Step 8400/11481 | Loss: 0.1569
+Epoch 2 | Step 8500/11481 | Loss: 0.2418
+Epoch 2 | Step 8600/11481 | Loss: 0.2213
+Epoch 2 | Step 8700/11481 | Loss: 0.1944
+Epoch 2 | Step 8800/11481 | Loss: 0.3015
+Epoch 2 | Step 8900/11481 | Loss: 0.0444
+Epoch 2 | Step 9000/11481 | Loss: 0.4462
+Epoch 2 | Step 9100/11481 | Loss: 0.4658
+Epoch 2 | Step 9200/11481 | Loss: 0.5660
+Epoch 2 | Step 9300/11481 | Loss: 0.1806
+Epoch 2 | Step 9400/11481 | Loss: 0.1427
+Epoch 2 | Step 9500/11481 | Loss: 0.0750
+Epoch 2 | Step 9600/11481 | Loss: 0.1717
+Epoch 2 | Step 9700/11481 | Loss: 0.0783
+Epoch 2 | Step 9800/11481 | Loss: 0.2436
+Epoch 2 | Step 9900/11481 | Loss: 0.1363
+Epoch 2 | Step 10000/11481 | Loss: 0.0459
+Epoch 2 | Step 10100/11481 | Loss: 0.0547
+Epoch 2 | Step 10200/11481 | Loss: 0.3016
+Epoch 2 | Step 10300/11481 | Loss: 0.1032
+Epoch 2 | Step 10400/11481 | Loss: 0.1227
+Epoch 2 | Step 10500/11481 | Loss: 0.1867
+Epoch 2 | Step 10600/11481 | Loss: 0.1123
+Epoch 2 | Step 10700/11481 | Loss: 0.3569
+Epoch 2 | Step 10800/11481 | Loss: 0.3001
+Epoch 2 | Step 10900/11481 | Loss: 0.0622
+Epoch 2 | Step 11000/11481 | Loss: 0.2585
+Epoch 2 | Step 11100/11481 | Loss: 0.1858
+Epoch 2 | Step 11200/11481 | Loss: 0.2090
+Epoch 2 | Step 11300/11481 | Loss: 0.1559
+Epoch 2 | Step 11400/11481 | Loss: 0.1860
+Epoch 2/5 | Train Loss: 0.4182 | Val Acc: 0.8774
+Epoch 3 | Step 0/11481 | Loss: 0.2217
+Epoch 3 | Step 100/11481 | Loss: 0.0906
+Epoch 3 | Step 200/11481 | Loss: 0.4441
+Epoch 3 | Step 300/11481 | Loss: 0.0447
+Epoch 3 | Step 400/11481 | Loss: 0.1952
+Epoch 3 | Step 500/11481 | Loss: 0.2425
+Epoch 3 | Step 600/11481 | Loss: 0.0939
+Epoch 3 | Step 700/11481 | Loss: 0.0341
+Epoch 3 | Step 800/11481 | Loss: 0.3712
+Epoch 3 | Step 900/11481 | Loss: 0.2301
+Epoch 3 | Step 1000/11481 | Loss: 0.2246
+Epoch 3 | Step 1100/11481 | Loss: 0.3049
+Epoch 3 | Step 1200/11481 | Loss: 0.1015
+Epoch 3 | Step 1300/11481 | Loss: 0.4064
+Epoch 3 | Step 1400/11481 | Loss: 0.4074
+Epoch 3 | Step 1500/11481 | Loss: 0.0653
+Epoch 3 | Step 1600/11481 | Loss: 0.0276
+Epoch 3 | Step 1700/11481 | Loss: 0.1519
+Epoch 3 | Step 1800/11481 | Loss: 0.0749
+Epoch 3 | Step 1900/11481 | Loss: 0.1101
+Epoch 3 | Step 2000/11481 | Loss: 0.2824
+Epoch 3 | Step 2100/11481 | Loss: 0.1040
+Epoch 3 | Step 2200/11481 | Loss: 0.2965
+Epoch 3 | Step 2300/11481 | Loss: 0.0655
+Epoch 3 | Step 2400/11481 | Loss: 0.1383
+Epoch 3 | Step 2500/11481 | Loss: 0.3273
+Epoch 3 | Step 2600/11481 | Loss: 0.0583
+Epoch 3 | Step 2700/11481 | Loss: 0.1682
+Epoch 3 | Step 2800/11481 | Loss: 0.3431
+Epoch 3 | Step 2900/11481 | Loss: 0.0787
+Epoch 3 | Step 3000/11481 | Loss: 0.1179
+Epoch 3 | Step 3100/11481 | Loss: 0.2218
+Epoch 3 | Step 3200/11481 | Loss: 0.0594
+Epoch 3 | Step 3300/11481 | Loss: 0.2898
+Epoch 3 | Step 3400/11481 | Loss: 0.1225
+Epoch 3 | Step 3500/11481 | Loss: 0.0739
+Epoch 3 | Step 3600/11481 | Loss: 0.0995
+Epoch 3 | Step 3700/11481 | Loss: 0.0985
+Epoch 3 | Step 3800/11481 | Loss: 0.0975
+Epoch 3 | Step 3900/11481 | Loss: 0.0714
+Epoch 3 | Step 4000/11481 | Loss: 0.0898
+Epoch 3 | Step 4100/11481 | Loss: 0.1466
+Epoch 3 | Step 4200/11481 | Loss: 0.0357
+Epoch 3 | Step 4300/11481 | Loss: 0.1526
+Epoch 3 | Step 4400/11481 | Loss: 0.1817
+Epoch 3 | Step 4500/11481 | Loss: 0.1290
+Epoch 3 | Step 4600/11481 | Loss: 0.0452
+Epoch 3 | Step 4700/11481 | Loss: 0.1896
+Epoch 3 | Step 4800/11481 | Loss: 0.3950
+Epoch 3 | Step 4900/11481 | Loss: 0.1021
+Epoch 3 | Step 5000/11481 | Loss: 0.0781
+Epoch 3 | Step 5100/11481 | Loss: 0.2431
+Epoch 3 | Step 5200/11481 | Loss: 0.1578
+Epoch 3 | Step 5300/11481 | Loss: 0.2547
+Epoch 3 | Step 5400/11481 | Loss: 0.0199
+Epoch 3 | Step 5500/11481 | Loss: 0.3972
+Epoch 3 | Step 5600/11481 | Loss: 0.1344
+Epoch 3 | Step 5700/11481 | Loss: 0.0550
+Epoch 3 | Step 5800/11481 | Loss: 0.1637
+Epoch 3 | Step 5900/11481 | Loss: 0.2358
+Epoch 3 | Step 6000/11481 | Loss: 0.1744
+Epoch 3 | Step 6100/11481 | Loss: 0.1254
+Epoch 3 | Step 6200/11481 | Loss: 0.0292
+Epoch 3 | Step 6300/11481 | Loss: 0.1256
+Epoch 3 | Step 6400/11481 | Loss: 0.2661
+Epoch 3 | Step 6500/11481 | Loss: 0.0592
+Epoch 3 | Step 6600/11481 | Loss: 0.1584
+Epoch 3 | Step 6700/11481 | Loss: 0.3061
+Epoch 3 | Step 6800/11481 | Loss: 0.3368
+Epoch 3 | Step 6900/11481 | Loss: 0.0387
+Epoch 3 | Step 7000/11481 | Loss: 0.1487
+Epoch 3 | Step 7100/11481 | Loss: 0.1997
+Epoch 3 | Step 7200/11481 | Loss: 0.1954
+Epoch 3 | Step 7300/11481 | Loss: 0.1324
+Epoch 3 | Step 7400/11481 | Loss: 0.1072
+Epoch 3 | Step 7500/11481 | Loss: 0.3128
+Epoch 3 | Step 7600/11481 | Loss: 0.2023
+Epoch 3 | Step 7700/11481 | Loss: 0.1824
+Epoch 3 | Step 7800/11481 | Loss: 0.1908
+Epoch 3 | Step 7900/11481 | Loss: 0.3664
+Epoch 3 | Step 8000/11481 | Loss: 0.1011
+Epoch 3 | Step 8100/11481 | Loss: 0.5847
+Epoch 3 | Step 8200/11481 | Loss: 0.1502
+Epoch 3 | Step 8300/11481 | Loss: 0.0245
+Epoch 3 | Step 8400/11481 | Loss: 0.1448
+Epoch 3 | Step 8500/11481 | Loss: 0.1455
+Epoch 3 | Step 8600/11481 | Loss: 0.0608
+Epoch 3 | Step 8700/11481 | Loss: 0.1216
+Epoch 3 | Step 8800/11481 | Loss: 0.1181
+Epoch 3 | Step 8900/11481 | Loss: 0.0124
+Epoch 3 | Step 9000/11481 | Loss: 0.2294
+Epoch 3 | Step 9100/11481 | Loss: 0.1577
+Epoch 3 | Step 9200/11481 | Loss: 0.0964
+Epoch 3 | Step 9300/11481 | Loss: 0.5414
+Epoch 3 | Step 9400/11481 | Loss: 0.0861
+Epoch 3 | Step 9500/11481 | Loss: 0.0998
+Epoch 3 | Step 9600/11481 | Loss: 0.1286
+Epoch 3 | Step 9700/11481 | Loss: 0.2287
+Epoch 3 | Step 9800/11481 | Loss: 0.1112
+Epoch 3 | Step 9900/11481 | Loss: 0.3925
+Epoch 3 | Step 10000/11481 | Loss: 0.0501
+Epoch 3 | Step 10100/11481 | Loss: 0.0261
+Epoch 3 | Step 10200/11481 | Loss: 0.0462
+Epoch 3 | Step 10300/11481 | Loss: 0.0080
+Epoch 3 | Step 10400/11481 | Loss: 0.1013
+Epoch 3 | Step 10500/11481 | Loss: 0.2418
+Epoch 3 | Step 10600/11481 | Loss: 0.3230
+Epoch 3 | Step 10700/11481 | Loss: 0.2594
+Epoch 3 | Step 10800/11481 | Loss: 0.1154
+Epoch 3 | Step 10900/11481 | Loss: 0.0853
+Epoch 3 | Step 11000/11481 | Loss: 0.0333
+Epoch 3 | Step 11100/11481 | Loss: 0.1923
+Epoch 3 | Step 11200/11481 | Loss: 0.1248
+Epoch 3 | Step 11300/11481 | Loss: 0.0250
+Epoch 3 | Step 11400/11481 | Loss: 0.2880
+Epoch 3/5 | Train Loss: 0.3275 | Val Acc: 0.8831
+Epoch 4 | Step 0/11481 | Loss: 0.1720
+Epoch 4 | Step 100/11481 | Loss: 0.2575
+Epoch 4 | Step 200/11481 | Loss: 0.1056
+Epoch 4 | Step 300/11481 | Loss: 0.1040
+Epoch 4 | Step 400/11481 | Loss: 0.0416
+Epoch 4 | Step 500/11481 | Loss: 0.0653
+Epoch 4 | Step 600/11481 | Loss: 0.1769
+Epoch 4 | Step 700/11481 | Loss: 0.2716
+Epoch 4 | Step 800/11481 | Loss: 0.0906
+Epoch 4 | Step 900/11481 | Loss: 0.1750
+Epoch 4 | Step 1000/11481 | Loss: 0.1193
+Epoch 4 | Step 1100/11481 | Loss: 0.1674
+Epoch 4 | Step 1200/11481 | Loss: 0.1710
+Epoch 4 | Step 1300/11481 | Loss: 0.0775
+Epoch 4 | Step 1400/11481 | Loss: 0.1043
+Epoch 4 | Step 1500/11481 | Loss: 0.1431
+Epoch 4 | Step 1600/11481 | Loss: 0.0349
+Epoch 4 | Step 1700/11481 | Loss: 0.0993
+Epoch 4 | Step 1800/11481 | Loss: 0.0640
+Epoch 4 | Step 1900/11481 | Loss: 0.2134
+Epoch 4 | Step 2000/11481 | Loss: 0.1012
+Epoch 4 | Step 2100/11481 | Loss: 0.1871
+Epoch 4 | Step 2200/11481 | Loss: 0.0136
+Epoch 4 | Step 2300/11481 | Loss: 0.0712
+Epoch 4 | Step 2400/11481 | Loss: 0.0297
+Epoch 4 | Step 2500/11481 | Loss: 0.1021
+Epoch 4 | Step 2600/11481 | Loss: 0.2513
+Epoch 4 | Step 2700/11481 | Loss: 0.0140
+Epoch 4 | Step 2800/11481 | Loss: 0.1174
+Epoch 4 | Step 2900/11481 | Loss: 0.0085
+Epoch 4 | Step 3000/11481 | Loss: 0.1247
+Epoch 4 | Step 3100/11481 | Loss: 0.0485
+Epoch 4 | Step 3200/11481 | Loss: 0.0841
+Epoch 4 | Step 3300/11481 | Loss: 0.0936
+Epoch 4 | Step 3400/11481 | Loss: 0.1706
+Epoch 4 | Step 3500/11481 | Loss: 0.0811
+Epoch 4 | Step 3600/11481 | Loss: 0.0433
+Epoch 4 | Step 3700/11481 | Loss: 0.2110
+Epoch 4 | Step 3800/11481 | Loss: 0.0841
+Epoch 4 | Step 3900/11481 | Loss: 0.0418
+Epoch 4 | Step 4000/11481 | Loss: 0.1882
+Epoch 4 | Step 4100/11481 | Loss: 0.0180
+Epoch 4 | Step 4200/11481 | Loss: 0.1769
+Epoch 4 | Step 4300/11481 | Loss: 0.0461
+Epoch 4 | Step 4400/11481 | Loss: 0.0039
+Epoch 4 | Step 4500/11481 | Loss: 0.3494
+Epoch 4 | Step 4600/11481 | Loss: 0.1127
+Epoch 4 | Step 4700/11481 | Loss: 0.2674
+Epoch 4 | Step 4800/11481 | Loss: 0.0815
+Epoch 4 | Step 4900/11481 | Loss: 0.3209
+Epoch 4 | Step 5000/11481 | Loss: 0.0255
+Epoch 4 | Step 5100/11481 | Loss: 0.2137
+Epoch 4 | Step 5200/11481 | Loss: 0.2071
+Epoch 4 | Step 5300/11481 | Loss: 0.0524
+Epoch 4 | Step 5400/11481 | Loss: 0.0993
+Epoch 4 | Step 5500/11481 | Loss: 0.0096
+Epoch 4 | Step 5600/11481 | Loss: 0.0606
+Epoch 4 | Step 5700/11481 | Loss: 0.0685
+Epoch 4 | Step 5800/11481 | Loss: 0.0297
+Epoch 4 | Step 5900/11481 | Loss: 0.0670
+Epoch 4 | Step 6000/11481 | Loss: 0.0150
+Epoch 4 | Step 6100/11481 | Loss: 0.1244
+Epoch 4 | Step 6200/11481 | Loss: 0.2200
+Epoch 4 | Step 6300/11481 | Loss: 0.0057
+Epoch 4 | Step 6400/11481 | Loss: 0.0317
+Epoch 4 | Step 6500/11481 | Loss: 0.0834
+Epoch 4 | Step 6600/11481 | Loss: 0.1977
+Epoch 4 | Step 6700/11481 | Loss: 0.0162
+Epoch 4 | Step 6800/11481 | Loss: 0.1656
+Epoch 4 | Step 6900/11481 | Loss: 0.0989
+Epoch 4 | Step 7000/11481 | Loss: 0.0854
+Epoch 4 | Step 7100/11481 | Loss: 0.1248
+Epoch 4 | Step 7200/11481 | Loss: 0.0939
+Epoch 4 | Step 7300/11481 | Loss: 0.1721
+Epoch 4 | Step 7400/11481 | Loss: 0.2641
+Epoch 4 | Step 7500/11481 | Loss: 0.0226
+Epoch 4 | Step 7600/11481 | Loss: 0.0265
+Epoch 4 | Step 7700/11481 | Loss: 0.0705
+Epoch 4 | Step 7800/11481 | Loss: 0.0616
+Epoch 4 | Step 7900/11481 | Loss: 0.4661
+Epoch 4 | Step 8000/11481 | Loss: 0.0062
+Epoch 4 | Step 8100/11481 | Loss: 0.1034
+Epoch 4 | Step 8200/11481 | Loss: 0.0874
+Epoch 4 | Step 8300/11481 | Loss: 0.1305
+Epoch 4 | Step 8400/11481 | Loss: 0.0383
+Epoch 4 | Step 8500/11481 | Loss: 0.1846
+Epoch 4 | Step 8600/11481 | Loss: 0.1467
+Epoch 4 | Step 8700/11481 | Loss: 0.0935
+Epoch 4 | Step 8800/11481 | Loss: 0.0655
+Epoch 4 | Step 8900/11481 | Loss: 0.2738
+Epoch 4 | Step 9000/11481 | Loss: 0.0644
+Epoch 4 | Step 9100/11481 | Loss: 0.0643
+Epoch 4 | Step 9200/11481 | Loss: 0.1362
+Epoch 4 | Step 9300/11481 | Loss: 0.1668
+Epoch 4 | Step 9400/11481 | Loss: 0.2728
+Epoch 4 | Step 9500/11481 | Loss: 0.0876
+Epoch 4 | Step 9600/11481 | Loss: 0.1378
+Epoch 4 | Step 9700/11481 | Loss: 0.1145
+Epoch 4 | Step 9800/11481 | Loss: 0.1230
+Epoch 4 | Step 9900/11481 | Loss: 0.0186
+Epoch 4 | Step 10000/11481 | Loss: 0.1713
+Epoch 4 | Step 10100/11481 | Loss: 0.0328
+Epoch 4 | Step 10200/11481 | Loss: 0.0855
+Epoch 4 | Step 10300/11481 | Loss: 0.0409
+Epoch 4 | Step 10400/11481 | Loss: 0.2212
+Epoch 4 | Step 10500/11481 | Loss: 0.1033
+Epoch 4 | Step 10600/11481 | Loss: 0.2289
+Epoch 4 | Step 10700/11481 | Loss: 0.3479
+Epoch 4 | Step 10800/11481 | Loss: 0.1457
+Epoch 4 | Step 10900/11481 | Loss: 0.1387
+Epoch 4 | Step 11000/11481 | Loss: 0.0216
+Epoch 4 | Step 11100/11481 | Loss: 0.0680
+Epoch 4 | Step 11200/11481 | Loss: 0.0550
+Epoch 4 | Step 11300/11481 | Loss: 0.2533
+Epoch 4 | Step 11400/11481 | Loss: 0.2557
+Epoch 4/5 | Train Loss: 0.2570 | Val Acc: 0.8823
+Epoch 5 | Step 0/11481 | Loss: 0.0559
+Epoch 5 | Step 100/11481 | Loss: 0.0544
+Epoch 5 | Step 200/11481 | Loss: 0.1003
+Epoch 5 | Step 300/11481 | Loss: 0.2084
+Epoch 5 | Step 400/11481 | Loss: 0.1581
+Epoch 5 | Step 500/11481 | Loss: 0.2893
+Epoch 5 | Step 600/11481 | Loss: 0.0194
+Epoch 5 | Step 700/11481 | Loss: 0.0081
+Epoch 5 | Step 800/11481 | Loss: 0.0238
+Epoch 5 | Step 900/11481 | Loss: 0.3238
+Epoch 5 | Step 1000/11481 | Loss: 0.0105
+Epoch 5 | Step 1100/11481 | Loss: 0.1016
+Epoch 5 | Step 1200/11481 | Loss: 0.0324
+Epoch 5 | Step 1300/11481 | Loss: 0.0271
+Epoch 5 | Step 1400/11481 | Loss: 0.2209
+Epoch 5 | Step 1500/11481 | Loss: 0.0783
+Epoch 5 | Step 1600/11481 | Loss: 0.0103
+Epoch 5 | Step 1700/11481 | Loss: 0.0306
+Epoch 5 | Step 1800/11481 | Loss: 0.0189
+Epoch 5 | Step 1900/11481 | Loss: 0.2111
+Epoch 5 | Step 2000/11481 | Loss: 0.0153
+Epoch 5 | Step 2100/11481 | Loss: 0.0849
+Epoch 5 | Step 2200/11481 | Loss: 0.0587
+Epoch 5 | Step 2300/11481 | Loss: 0.0744
+Epoch 5 | Step 2400/11481 | Loss: 0.2262
+Epoch 5 | Step 2500/11481 | Loss: 0.0406
+Epoch 5 | Step 2600/11481 | Loss: 0.2393
+Epoch 5 | Step 2700/11481 | Loss: 0.1926
+Epoch 5 | Step 2800/11481 | Loss: 0.0339
+Epoch 5 | Step 2900/11481 | Loss: 0.0241
+Epoch 5 | Step 3000/11481 | Loss: 0.0185
+Epoch 5 | Step 3100/11481 | Loss: 0.0628
+Epoch 5 | Step 3200/11481 | Loss: 0.2771
+Epoch 5 | Step 3300/11481 | Loss: 0.1613
+Epoch 5 | Step 3400/11481 | Loss: 0.0233
+Epoch 5 | Step 3500/11481 | Loss: 0.2025
+Epoch 5 | Step 3600/11481 | Loss: 0.0065
+Epoch 5 | Step 3700/11481 | Loss: 0.0734
+Epoch 5 | Step 3800/11481 | Loss: 0.0844
+Epoch 5 | Step 3900/11481 | Loss: 0.0641
+Epoch 5 | Step 4000/11481 | Loss: 0.0554
+Epoch 5 | Step 4100/11481 | Loss: 0.0756
+Epoch 5 | Step 4200/11481 | Loss: 0.0065
+Epoch 5 | Step 4300/11481 | Loss: 0.1478
+Epoch 5 | Step 4400/11481 | Loss: 0.0520
+Epoch 5 | Step 4500/11481 | Loss: 0.0470
+Epoch 5 | Step 4600/11481 | Loss: 0.0766
+Epoch 5 | Step 4700/11481 | Loss: 0.1750
+Epoch 5 | Step 4800/11481 | Loss: 0.0383
+Epoch 5 | Step 4900/11481 | Loss: 0.0246
+Epoch 5 | Step 5000/11481 | Loss: 0.1358
+Epoch 5 | Step 5100/11481 | Loss: 0.2298
+Epoch 5 | Step 5200/11481 | Loss: 0.1446
+Epoch 5 | Step 5300/11481 | Loss: 0.0410
+Epoch 5 | Step 5400/11481 | Loss: 0.0235
+Epoch 5 | Step 5500/11481 | Loss: 0.0182
+Epoch 5 | Step 5600/11481 | Loss: 0.0139
+Epoch 5 | Step 5700/11481 | Loss: 0.0926
+Epoch 5 | Step 5800/11481 | Loss: 0.1249
+Epoch 5 | Step 5900/11481 | Loss: 0.0813
+Epoch 5 | Step 6000/11481 | Loss: 0.0243
+Epoch 5 | Step 6100/11481 | Loss: 0.1743
+Epoch 5 | Step 6200/11481 | Loss: 0.2158
+Epoch 5 | Step 6300/11481 | Loss: 0.0259
+Epoch 5 | Step 6400/11481 | Loss: 0.0223
+Epoch 5 | Step 6500/11481 | Loss: 0.0455
+Epoch 5 | Step 6600/11481 | Loss: 0.4201
+Epoch 5 | Step 6700/11481 | Loss: 0.0870
+Epoch 5 | Step 6800/11481 | Loss: 0.0106
+Epoch 5 | Step 6900/11481 | Loss: 0.0501
+Epoch 5 | Step 7000/11481 | Loss: 0.0464
+Epoch 5 | Step 7100/11481 | Loss: 0.0050
+Epoch 5 | Step 7200/11481 | Loss: 0.0128
+Epoch 5 | Step 7300/11481 | Loss: 0.0722
+Epoch 5 | Step 7400/11481 | Loss: 0.0155
+Epoch 5 | Step 7500/11481 | Loss: 0.0304
+Epoch 5 | Step 7600/11481 | Loss: 0.1251
+Epoch 5 | Step 7700/11481 | Loss: 0.0388
+Epoch 5 | Step 7800/11481 | Loss: 0.1727
+Epoch 5 | Step 7900/11481 | Loss: 0.0147
+Epoch 5 | Step 8000/11481 | Loss: 0.1592
+Epoch 5 | Step 8100/11481 | Loss: 0.2060
+Epoch 5 | Step 8200/11481 | Loss: 0.3045
+Epoch 5 | Step 8300/11481 | Loss: 0.0730
+Epoch 5 | Step 8400/11481 | Loss: 0.0564
+Epoch 5 | Step 8500/11481 | Loss: 0.0756
+Epoch 5 | Step 8600/11481 | Loss: 0.1599
+Epoch 5 | Step 8700/11481 | Loss: 0.1706
+Epoch 5 | Step 8800/11481 | Loss: 0.0379
+Epoch 5 | Step 8900/11481 | Loss: 0.0164
+Epoch 5 | Step 9000/11481 | Loss: 0.0372
+Epoch 5 | Step 9100/11481 | Loss: 0.0528
+Epoch 5 | Step 9200/11481 | Loss: 0.1622
+Epoch 5 | Step 9300/11481 | Loss: 0.0549
+Epoch 5 | Step 9400/11481 | Loss: 0.2996
+Epoch 5 | Step 9500/11481 | Loss: 0.1599
+Epoch 5 | Step 9600/11481 | Loss: 0.0484
+Epoch 5 | Step 9700/11481 | Loss: 0.2265
+Epoch 5 | Step 9800/11481 | Loss: 0.0085
+Epoch 5 | Step 9900/11481 | Loss: 0.0264
+Epoch 5 | Step 10000/11481 | Loss: 0.2280
+Epoch 5 | Step 10100/11481 | Loss: 0.1199
+Epoch 5 | Step 10200/11481 | Loss: 0.1893
+Epoch 5 | Step 10300/11481 | Loss: 0.0355
+Epoch 5 | Step 10400/11481 | Loss: 0.0608
+Epoch 5 | Step 10500/11481 | Loss: 0.3205
+Epoch 5 | Step 10600/11481 | Loss: 0.1147
+Epoch 5 | Step 10700/11481 | Loss: 0.0607
+Epoch 5 | Step 10800/11481 | Loss: 0.0235
+Epoch 5 | Step 10900/11481 | Loss: 0.0777
+Epoch 5 | Step 11000/11481 | Loss: 0.3028
+Epoch 5 | Step 11100/11481 | Loss: 0.0806
+Epoch 5 | Step 11200/11481 | Loss: 0.1549
+Epoch 5 | Step 11300/11481 | Loss: 0.0107
+Epoch 5 | Step 11400/11481 | Loss: 0.0401
+Epoch 5/5 | Train Loss: 0.1995 | Val Acc: 0.8820
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\torchvision\datapoints\__init__.py:12: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\torchvision\datapoints\__init__.py:12: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\torchvision\datapoints\__init__.py:12: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\torchvision\datapoints\__init__.py:12: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\torchvision\transforms\v2\__init__.py:54: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\torchvision\transforms\v2\__init__.py:54: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\torchvision\transforms\v2\__init__.py:54: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\torchvision\transforms\v2\__init__.py:54: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\sklearn\metrics\_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\sklearn\metrics\_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+D:\withoutchinese_anaconda\envs\fake_news_detection\lib\site-packages\sklearn\metrics\_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+分类报告已保存到: d:\fake_news\result\OptimizedBERT_classification_report.txt
+混淆矩阵已保存到: d:\fake_news\result\OptimizedBERT_confusion_matrix.png
+测试集预测结果已保存到: d:\fake_news\result\OptimizedBERT_test_predictions.csv
